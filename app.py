@@ -3,7 +3,7 @@ import os
 
 import aws_cdk as cdk
 
-from generate_jwks_lambda.generate_jwks_lambda_stack import GenerateJwksLambdaStack
+from cdk.default_stack import GenerateJwksLambdaStack
 
 
 app = cdk.App()
