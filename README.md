@@ -45,8 +45,9 @@ The project uses AWS SAM for building the lambda function within a container. Af
 
 ### Project structure
 
-- cdk folder contains the AWS CDK stacks for the IaS provisioning
-- fn folder contains the JWK key generator and the lambda handler
+- cdk folder contains the AWS CDK stacks for the IaC provisioning
+- fn folder contains the JWK key [generator](./fn/generator.py) and the lambda [handler](./fn/handler.py)
+
 
 ### AWS SAM
 
