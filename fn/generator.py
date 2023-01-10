@@ -98,9 +98,9 @@ def generate_keys(kty: str, params: str) -> Keys:
     return _generator.generate_keys()
 
 
-def generate_keys_as_json(kty: str, params: str):
+def generate_keys_as_json(kty: str, params: str) -> str:
     return generate_keys(kty=kty, params=params).as_json()
 
 
-def generate_keys_as_dict(kty: str, params: str):
+def generate_keys_as_dict(kty: str, params: str) -> dict:
     return generate_keys(kty=kty, params=params).as_dict()
