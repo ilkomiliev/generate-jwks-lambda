@@ -80,6 +80,9 @@ and as `dict`:
 }
 ```
 
+It can be used as a standalone script, as described below in the CLI section or deployed as a lambda function and exposed as REST call via the 
+AWS API Gateway service - see below for details.
+
 ## Usage
 
 The main logic is implemented in the [generator.py](./fn/generator.py). It exposes two high level functions to get keys in JSON and dict format respectively:
@@ -109,7 +112,7 @@ python cli.py RSA
 ### AWS Serverless
 
 The project provides also AWS CDK project for deployment of the JWK generator as a lambda function and exposing the functionality as a REST call 
-via the AWS API Gateway. The returned result in JSON format as described above. 
+via the AWS API Gateway. The returned result is in JSON format as described above. 
 
 ## Development
 
