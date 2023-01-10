@@ -100,6 +100,14 @@ These can be used directly programmatically - for more complex use cases it is r
 There is a [CLI](cli.py), which can be directly called in a python environment:
 
 ```bash
+# create a python venv - usually 
+# python -m venv path_to_venv
+# activate the venv: 
+# source path_to_venv/bin/activate
+# install the necessary dependencies ONLY for the generator from fn specific requirements file
+python -m pip install -r fn/requirements.txt
+
+# run the provided cli.py
 python cli.py
 ```
 
